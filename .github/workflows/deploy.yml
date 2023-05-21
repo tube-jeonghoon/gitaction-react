@@ -5,9 +5,9 @@ on: # Event 감지
       - main # 해당 브랜치의 푸쉬가 일어날 때 CI/CD를 진행하겠다는 뜻
 
 env:
-  S3_BUCKET_NAME: react-github-actions-test-123
-  CODE_DEPLOY_APPLICATION_NAME: react-deploy
-  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: react-group
+  S3_BUCKET_NAME: react-github-actions-test-123 # S3 버킷 이름
+  CODE_DEPLOY_APPLICATION_NAME: react-deploy # codedeploy에서 만든 어플리케이션 이름
+  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: react-group # codedeploy 만든 배포 그룹 세부 정보
 
 jobs:
   build:
